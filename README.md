@@ -1,12 +1,12 @@
 Team 3 Project of the CyberTraining program at UMBC in 2019 http://cybertraining.umbc.edu/
-#### Title: An Approach to Tuning Hyperparameters in Parallel -A Performance Study 
+#### Title: An Approach to Tuning Hyperparameters in Parallel - A Performance Study 
 #### Team members: Charlie Becker; Bin Wang; Will Mayfield; Sarah Murphy
 #### Mentors: Dr. Matthias Gobbert; Carlos Barajas
 
 
 This is a working example of a performance study completed on the 'Taki' HPC cluster at UMBC. It uses a combination of popular Python modules for hyperparameter tuning in parallel. The data and base model configuration is borrowed from the Machine Learning in Python forEnvironmental Science Problems AMS Short Course, provided by David John Gagne from the National Center for Atmospheric Research.  The repository for that course can be found at [https://github.com/djgagne/ams-ml-python-course]
 
-Below, are some brief directions to reproduce the results in the technical report. Full results are seen and discussed in [Technical\_Report.pdf](https://github.com/charlie-becker/UMBC_CT_Project/blob/master/Technical_Report.pdf) 
+Below, are some brief directions to reproduce the results in the technical report. Full results are seen and discussed in [Technical\_Report.pdf](https://github.com/big-data-lab-umbc/cybertraining/blob/master/year-2-projects/team-3/Technical_Report.pdf) 
 ### Workflow
 After cloning this directory, first run data\_download.py which will download the data into a data direcory.
 
