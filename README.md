@@ -1,7 +1,7 @@
 Team 3 Project of the CyberTraining program at UMBC in 2019 ([http://cybertraining.umbc.edu/])
-### Title: An Approach to Tuning Hyperparameters in Parallel -A Performance Study 
-### Team members: Charlie Becker; Bin Wang; Will Mayfield; Sarah Murphy
-### Mentors: Dr. Matthias Gobbert; Carlos Barajas
+#### Title: #### An Approach to Tuning Hyperparameters in Parallel -A Performance Study 
+#### Team members: Charlie Becker; Bin Wang; Will Mayfield; Sarah Murphy
+#### Mentors: Dr. Matthias Gobbert; Carlos Barajas
 
 
 This is a working example of a performance study completed on the 'Taki' HPC cluster at UMBC. It uses a combination of popular Python modules for hyperparameter tuning in parallel. The data and base model configuration is borrowed from the Machine Learning in Python forEnvironmental Science Problems AMS Short Course, provided by David John Gagne from the National Center for Atmospheric Research.  The repository for that course can be found at [https://github.com/djgagne/ams-ml-python-course]
@@ -19,6 +19,8 @@ Output for the study will be delivered to slurm-2013.out, slurm-2018.out or slur
 The full technical report is listed as Technical\_Report.pdf
 
 ## Data augmentation
-(1) RandomOverSampler class from imblearn.over\_sampling was used to oversample the minority classes (non-tornadic data) fed into the deep neural network. The relevant script is dnn.py
-(2) For convolutional neural network, the input data are tensor images. We augment the minority classes (non-tornadic images) by duplicating, shuffling, and transforming the images through small angle rotation but keeping the labels unchanged.This can be done in real time while training the model  via ImageDataGenerator from Keras or at the preprocessing stage using skimage.transform.rotate before data are feeding into the model. In the code, this can be selected via two parameters 'augmentation' and 'on\_the\_fly'. For example, if augmentation==True, and on\_the\_fly==False, this means that the augmented data is generated before training. The working script is cnn.py
+RandomOverSampler class from imblearn.over\_sampling was used to oversample the minority classes (non-tornadic data) fed into the deep neural network. The relevant script is dnn.py
+
+For convolutional neural network, the input data are tensor images. We augment the minority classes (non-tornadic images) by duplicating, shuffling, and transforming the images through small angle rotation but keeping the labels unchanged.This can be done in real time while training the model  via ImageDataGenerator from Keras or at the preprocessing stage using skimage.transform.rotate before data are feeding into the model. In the code, this can be selected via two parameters 'augmentation' and 'on\_the\_fly'. For example, if augmentation==True, and on\_the\_fly==False, this means that the augmented data is generated before training. The working script is cnn.py
+
 (3)Overall, the performance of the neural network models in terms of AUC are similar, which is roughly .96.   
