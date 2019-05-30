@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=DaskTest
+#SBATCH --job-name=Study_2018
 #SBATCH --output=slurm_2018.out
 #SBATCH --error=slurm_2018.err
 #SBATCH --partition=batch
